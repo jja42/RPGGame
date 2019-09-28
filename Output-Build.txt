@@ -1,0 +1,13 @@
+﻿1>------ Build started: Project: Ink-Runtime, Configuration: Debug Any CPU ------
+1>  Ink-Runtime -> C:\Users\omega\Game\Temp\bin\Debug\Ink-Runtime.dll
+2>------ Build started: Project: Assembly-CSharp-firstpass, Configuration: Debug Any CPU ------
+2>C:\Users\omega\Game\Assets\Plugins\Ink\Example\Scripts\BasicInkExample.cs(101,17,101,23): warning CS0649: Field 'BasicInkExample.canvas' is never assigned to, and will always have its default value null
+2>C:\Users\omega\Game\Assets\Plugins\Ink\Example\Scripts\BasicInkExample.cs(107,17,107,29): warning CS0649: Field 'BasicInkExample.buttonPrefab' is never assigned to, and will always have its default value null
+2>C:\Users\omega\Game\Assets\Plugins\Ink\Example\Scripts\BasicInkExample.cs(105,15,105,25): warning CS0649: Field 'BasicInkExample.textPrefab' is never assigned to, and will always have its default value null
+2>C:\Users\omega\Game\Assets\Plugins\Ink\Example\Scripts\BasicInkExample.cs(97,20,97,32): warning CS0649: Field 'BasicInkExample.inkJSONAsset' is never assigned to, and will always have its default value null
+2>  Assembly-CSharp-firstpass -> C:\Users\omega\Game\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+3>------ Build started: Project: Assembly-CSharp, Configuration: Debug Any CPU ------
+4>------ Build started: Project: Assembly-CSharp-Editor-firstpass, Configuration: Debug Any CPU ------
+3>  Assembly-CSharp -> C:\Users\omega\Game\Temp\bin\Debug\Assembly-CSharp.dll
+4>  Assembly-CSharp-Editor-firstpass -> C:\Users\omega\Game\Temp\bin\Debug\Assembly-CSharp-Editor-firstpass.dll
+========== Build: 4 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
