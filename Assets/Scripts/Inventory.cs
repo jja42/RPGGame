@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Inventory : MonoBehaviour
+{
+    public List<Item> characterItems = new List<Item>();
+    public ItemDatabase itemDatabase;
+    public UIInventory inventoryUI;
+    public void Start()
+    {
+        GiveItem("Sword");
+    }
+    public void GiveItem(string itemName)
+    {
+        Item itemToAdd = itemDatabase.GetItem(itemName);
+        characterItems.Add(itemToAdd);
+        inventoryUI.AddNewItem(itemToAdd);
+    }
+    public Item CheckForItem(string itemName)
+    {
+        return characterItems.Find(item => item.title == itemName);
+    }
+    public void RemoveItem(string itemName)
+    {
+        Item item = CheckForItem(itemName);
+        if (item != null)
+        {
+            characterItems.Remove(item);
+            inventoryUI.RemoveItem(item);
+        }
+    }
+}

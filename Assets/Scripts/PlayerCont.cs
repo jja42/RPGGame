@@ -10,17 +10,21 @@ public class PlayerCont : MonoBehaviour
     Vector3 startPos;
     Vector3 endPos;
     float t;
-
+    public AudioClip footstep;
+    public AudioSource audiosource;
     public Sprite northSprite;
     public Sprite eastSprite;
     public Sprite southSprite;
     public Sprite westSprite;
     public Animator animator;
+    public SpriteRenderer spriter;
     public float walkSpeed = 3f;
     // Start is called before the first frame update
     void Start()
     {
         animator  = gameObject.GetComponent<Animator>();
+        spriter = gameObject.GetComponent<SpriteRenderer>();
+        spriter.sprite = southSprite;
     }
 
     // Update is called once per frame
@@ -29,7 +33,9 @@ public class PlayerCont : MonoBehaviour
         if (!isMoving)
         {
             input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+            if (input.x != 0 && input.y != 0)
+            {
+                if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
             {
                 input.y = 0;
             }
@@ -37,39 +43,42 @@ public class PlayerCont : MonoBehaviour
             {
                 input.x = 0;
             }
-            if (input != Vector2.zero)
-            {
                 if (input.x < 0)
                 {
                     currentDir = Direction.West;
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
+                    audiosource.PlayOneShot(footstep);
+                    spriter.sprite = westSprite;
                 } else if (input.x > 0)
                 {
                     currentDir = Direction.East;
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
-                   
-                }else if (input.y < 0)
+                    audiosource.PlayOneShot(footstep);
+                    spriter.sprite = eastSprite;
+
+                }
+                else if (input.y < 0)
                 {
                     currentDir = Direction.South;
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
-                    
-                }else if (input.y > 0)
+                    audiosource.PlayOneShot(footstep);
+                    spriter.sprite = southSprite;
+
+                }
+                else if (input.y > 0)
                 {
                     currentDir = Direction.North;
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
-                   
+                    audiosource.PlayOneShot(footstep);
+                    spriter.sprite = northSprite;
+
                 }
 
                 StartCoroutine(Move(transform));
-            }
-            else
-            {
-                animator.SetFloat("Horizontal", input.x);
-                animator.SetFloat("Vertical", input.y);
             }
         }
     }
