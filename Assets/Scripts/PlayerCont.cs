@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerCont : MonoBehaviour
 {
+    public DialogueManager dialogueManager;
     Direction currentDir;
     Vector2 input;
     bool isMoving = false;
@@ -80,7 +80,19 @@ public class PlayerCont : MonoBehaviour
             }
         }
     }
-    void NPCFind(Vector3 position) { }
+    void NPCFind(Vector3 center) {
+        float radius = 1.0f;
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(center, radius);
+        int i = 0;
+        GameObject npc = hitColliders[i].gameObject;
+        dialogueManager.PlayDialogue(npc.name);
+        /*while (i < hitColliders.Length)
+        {
+            Debug.Log("Collider");
+            hitColliders[i].SendMessage("Dialogue");
+            i++;
+        }*/
+    }
     public IEnumerator Move(Transform entity)
     {
         isMoving = true;
