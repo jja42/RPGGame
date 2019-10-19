@@ -1,0 +1,1423 @@
+fileFormatVersion: 2
+guid: 627a0adac20302647a901160ba810d4e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -986436646616497709
+    second: Walking Gal_0
+  - first:
+      213: 6159902395664885012
+    second: Walking Gal_1
+  - first:
+      213: 8289866656444026233
+    second: Walking Gal_2
+  - first:
+      213: 2737954746479948462
+    second: Walking Gal_3
+  - first:
+      213: -3888340974702498582
+    second: Walking Gal_4
+  - first:
+      213: 7286998574579563780
+    second: Walking Gal_5
+  - first:
+      213: 3663410516217247319
+    second: Walking Gal_6
+  - first:
+      213: -5546440302462957693
+    second: Walking Gal_7
+  - first:
+      213: 4669682523865623950
+    second: Walking Gal_8
+  - first:
+      213: 2928735773004298017
+    second: Walking Gal_9
+  - first:
+      213: -6677145998060567724
+    second: Walking Gal_10
+  - first:
+      213: 2078719721048510780
+    second: Walking Gal_11
+  - first:
+      213: -556889077739995065
+    second: Walking Gal_12
+  - first:
+      213: -7376142565852996814
+    second: Walking Gal_13
+  - first:
+      213: 1947377333354856721
+    second: Walking Gal_14
+  - first:
+      213: -6631985948200188998
+    second: Walking Gal_15
+  - first:
+      213: -3535231030656254311
+    second: Walking Gal_16
+  - first:
+      213: 2484314553536824604
+    second: Walking Gal_17
+  - first:
+      213: -2454050083884515092
+    second: Walking Gal_18
+  - first:
+      213: -7735941611017395395
+    second: Walking Gal_19
+  - first:
+      213: 4365086467108499324
+    second: Walking Gal_20
+  - first:
+      213: 5308958746529284041
+    second: Walking Gal_21
+  - first:
+      213: -177001007744458895
+    second: Walking Gal_22
+  - first:
+      213: 852489118494363025
+    second: Walking Gal_23
+  - first:
+      213: 3956759336981301961
+    second: Walking Gal_24
+  - first:
+      213: 1472956669187867174
+    second: Walking Gal_25
+  - first:
+      213: -4125542118960822537
+    second: Walking Gal_26
+  - first:
+      213: -8087050146127434083
+    second: Walking Gal_27
+  - first:
+      213: 3180813825343226266
+    second: Walking Gal_28
+  - first:
+      213: -2096442277778549503
+    second: Walking Gal_29
+  - first:
+      213: -6194495180395151484
+    second: Walking Gal_30
+  - first:
+      213: 6398220894160500082
+    second: Walking Gal_31
+  - first:
+      213: -4247692787747289249
+    second: Walking Gal_32
+  - first:
+      213: 4534279751145298570
+    second: Walking Gal_33
+  - first:
+      213: 8148178511083970749
+    second: Walking Gal_34
+  - first:
+      213: 1147218248841773483
+    second: Walking Gal_35
+  - first:
+      213: 3718166996723142689
+    second: Walking Gal_36
+  - first:
+      213: 8818023639622487162
+    second: Walking Gal_37
+  - first:
+      213: -9216995090853340824
+    second: Walking Gal_38
+  - first:
+      213: -997425769911544960
+    second: Walking Gal_39
+  - first:
+      213: -7434899492806680585
+    second: Walking Gal_40
+  - first:
+      213: 8492536119250710326
+    second: Walking Gal_41
+  - first:
+      213: 652872766865117745
+    second: Walking Gal_42
+  - first:
+      213: 617153664291594008
+    second: Walking Gal_43
+  - first:
+      213: -3022098036507082010
+    second: Walking Gal_44
+  - first:
+      213: 587119731732967064
+    second: Walking Gal_45
+  - first:
+      213: 8680229710889379162
+    second: Walking Gal_46
+  - first:
+      213: 3875803010393052066
+    second: Walking Gal_47
+  - first:
+      213: -4562357698732296975
+    second: Walking Gal_48
+  - first:
+      213: 4103059044786293080
+    second: Walking Gal_49
+  - first:
+      213: 5792886271549391364
+    second: Walking Gal_50
+  - first:
+      213: -2818137053070126385
+    second: Walking Gal_51
+  - first:
+      213: -2806156387651866387
+    second: Walking Gal_52
+  - first:
+      213: -579808735899168401
+    second: Walking Gal_53
+  - first:
+      213: 4744139193181095017
+    second: Walking Gal_54
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walking Gal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cc38762368d894d8210d718a055849
+      internalID: -986436646616497709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 201
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96a402032e0a884da322637fb972af5
+      internalID: 6159902395664885012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 201
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9c030e75393e9479f9b6290cb06872
+      internalID: 8289866656444026233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 201
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a070e583e8d2234bb8ce2b99f21a1eb
+      internalID: 2737954746479948462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 201
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafe18a5a9edcc445b15436f17e78c04
+      internalID: -3888340974702498582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e9064f552f26f4fb1e334223d4104e
+      internalID: 7286998574579563780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a181f30c4f359469861c0d6f9926a6
+      internalID: 3663410516217247319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a3720c4ee8f404eadfff89e8b3302f
+      internalID: -5546440302462957693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d3ffff9693f8043aefb80a0def1e96
+      internalID: 4669682523865623950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a3d6e5c41a37648b2c4f713cb033d5
+      internalID: 2928735773004298017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5168aee0412e04d93696727ada2b7f
+      internalID: -6677145998060567724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae65f4bcf6f5ed14e854b5d055e9ed07
+      internalID: 2078719721048510780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0290d08ad10ecd49a13d4e9b75cda6d
+      internalID: -556889077739995065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9b3fba1e90ea044b7da33376ed7903
+      internalID: -7376142565852996814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 161
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468a18ab7e682974294c1834b106818a
+      internalID: 1947377333354856721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f43bd2feede3c4c8c05307e70c98df
+      internalID: -6631985948200188998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3dcaf57ba6a0d4f8c0b57c4676f19e
+      internalID: -3535231030656254311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce1c5f5afeefe44a93186e08b733c17
+      internalID: 2484314553536824604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f040c718369c8744081a41d007ea6945
+      internalID: -2454050083884515092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3170c66253023cc4b97c24c80d96faa3
+      internalID: -7735941611017395395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9deeb40e5d08d4c8cff72a5bfa6ece
+      internalID: 4365086467108499324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74aaa89dacd40a248a77a7d0c01f23d4
+      internalID: 5308958746529284041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_22
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0cf48fd7ccd6f4b8a8c1a1b4599895
+      internalID: -177001007744458895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3080d9c468fca5f4b9307a3e736539de
+      internalID: 852489118494363025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_24
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 121
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5747ff3a5d8c89f45914f061626c30c1
+      internalID: 3956759336981301961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5801ad8ac96dd46828e98f15a91f44
+      internalID: 1472956669187867174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_26
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd68d9cd7e16212418d0b5060004262a
+      internalID: -4125542118960822537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71adb09f6758c247bf4220db861ab9c
+      internalID: -8087050146127434083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_28
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31477897c808e834cae615215d4a15ab
+      internalID: 3180813825343226266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3a9c1087d8e914181bcb1620cc6ff4
+      internalID: -2096442277778549503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd35a64264d74f4c83ebe238059e061
+      internalID: -6194495180395151484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082944ef72cd19843bc314c0efb834dc
+      internalID: 6398220894160500082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_32
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af4a627da64f5a489064ac935856d4d
+      internalID: -4247692787747289249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1811d4b6537da438226f6acd051e1c
+      internalID: 4534279751145298570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_34
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 81
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c61c976cd2a9c46a36ac21718e5f81
+      internalID: 8148178511083970749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5c78e5fdfcea1469a0cc5904785f8a
+      internalID: 1147218248841773483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1a62af108e77247a6ab7aa657bcac8
+      internalID: 3718166996723142689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73de94e384c1c7c4094d78978b0323f9
+      internalID: 8818023639622487162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_38
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9054aeb62926f2e438f4b131e73e7272
+      internalID: -9216995090853340824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1c03aa333ef5243a12b0ad01a5a529
+      internalID: -997425769911544960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_40
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c06c4c427662b4f8de2c28f5a6b469
+      internalID: -7434899492806680585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe238af4cfc0bd64bad3ae1ba952c6d1
+      internalID: 8492536119250710326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_42
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fe5058cbf6b024fbdf491fcaa42f4c
+      internalID: 652872766865117745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21534341b18ce664d96553bbcbab1cea
+      internalID: 617153664291594008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_44
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 41
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a02a44d2d9aee145858aec081591c88
+      internalID: -3022098036507082010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87947b1414e7b13438eb1b9620313e75
+      internalID: 587119731732967064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_46
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899b18674b37fc34799be7fc4f447c41
+      internalID: 8680229710889379162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bc54e5eebbdd24180a410bf30dbc1c
+      internalID: 3875803010393052066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_48
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f37a1808d3988f41bd6bb3cec97a036
+      internalID: -4562357698732296975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecd4e082ab6eb846bdc59b19650a680
+      internalID: 4103059044786293080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_50
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a749b726e17c543b20a72777cfb863
+      internalID: 5792886271549391364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f3a7d7910e7144ab0e063c83b567b3
+      internalID: -2818137053070126385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_52
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a2fb2025b169541a3051fd0a273e9c
+      internalID: -2806156387651866387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b5d97b4d8b96841961a1f32002f152
+      internalID: -579808735899168401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Gal_54
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f6f3e08725c9d4aa1bdce7cacc1dd0
+      internalID: 4744139193181095017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d2a5dfd6b8633004396b7392eac57600
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

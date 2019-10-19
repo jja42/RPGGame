@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class InkTestScript : MonoBehaviour
 {
     public TextAsset inkJSON;
     private Story story;
@@ -13,9 +13,8 @@ public class DialogueManager : MonoBehaviour
     public Button buttonPrefab;
 
     // Start is called before the first frame update
-    public void PlayDialogue(string name)
+    void Start()
     {
-        inkJSON = Resources.Load<>("Ink/" + this.name);
         story = new Story(inkJSON.text);
 
         refreshUI();
@@ -32,21 +31,21 @@ public class DialogueManager : MonoBehaviour
         storyText.transform.SetParent(this.transform, false);
 
         foreach (Choice choice in story.currentChoices)
-        {
-            Button choiceButton = Instantiate(buttonPrefab) as Button;
-            choiceButton.transform.SetParent(this.transform, false);
+{
+   Button choiceButton = Instantiate(buttonPrefab) as Button;
+   choiceButton.transform.SetParent(this.transform, false);
 
-            // Gets the text from the button prefab
-            Text choiceText = choiceButton.GetComponentInChildren<Text>();
-            choiceText.text = choice.text;
+   // Gets the text from the button prefab
+   Text choiceText = choiceButton.GetComponentInChildren<Text>();
+   choiceText.text = choice.text;
 
-            // Set listener
-            choiceButton.onClick.AddListener(delegate
-            {
-                chooseStoryChoice(choice);
-            });
+   // Set listener
+   choiceButton.onClick.AddListener(delegate
+   {
+       chooseStoryChoice(choice);
+   });
+}
         }
-    }
 
 
     void eraseUI()

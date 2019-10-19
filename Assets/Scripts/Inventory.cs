@@ -7,15 +7,29 @@ public class Inventory : MonoBehaviour
     public List<Item> characterItems = new List<Item>();
     public ItemDatabase itemDatabase;
     public UIInventory inventoryUI;
+    public UIEquipment equipmentUI;
     public void Start()
     {
-        GiveItem("Sword");
+
+    }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            equipmentUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
+        }
     }
     public void GiveItem(string itemName)
     {
         Item itemToAdd = itemDatabase.GetItem(itemName);
         characterItems.Add(itemToAdd);
+        inventoryUI.gameObject.SetActive(true);
         inventoryUI.AddNewItem(itemToAdd);
+        inventoryUI.gameObject.SetActive(false);
     }
     public Item CheckForItem(string itemName)
     {
