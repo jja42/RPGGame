@@ -112,9 +112,9 @@ public class PlayerCont : MonoBehaviour
             entity.position = Vector3.Lerp(startPos, endPos, t);
             yield return 0;
         }
-        isMoving = false;
         ActionManager.instance.MoveAll();
-        yield return 0;
+        isMoving = false;
+       yield return 0;
     }
     public void SetSprite(Direction currentDir)
     {

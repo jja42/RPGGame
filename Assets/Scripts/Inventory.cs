@@ -7,7 +7,6 @@ public class Inventory : MonoBehaviour
     public List<Item> characterItems = new List<Item>();
     public ItemDatabase itemDatabase;
     public UIInventory inventoryUI;
-    public UIEquipment equipmentUI;
     public void Start()
     {
 
@@ -17,10 +16,6 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            equipmentUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
         }
     }
     public void GiveItem(string itemName)

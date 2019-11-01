@@ -15,7 +15,8 @@ VAR rep = ""
 
 
 === agree ===
-"Your acceptance is noted, brother"
+"Your acceptance is noted, brother, take this weapon"
+VAR giveitem = "Sword"
 -> ending
 
 

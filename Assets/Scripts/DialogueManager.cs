@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Button buttonPrefab;
     public bool talking = false;
     public int[] rep = { 0, 0, 0, 0 };
+    public Inventory inventory;
 
     // Start is called before the first frame update
     public void PlayDialogue(string name)
@@ -93,6 +94,16 @@ public class DialogueManager : MonoBehaviour
         {
             rep[3] += -1;
         }
+        if ((string)story.variablesState["giveitem"] != "")
+        {
+            string item = (string)story.variablesState["giveitem"];
+            inventory.GiveItem(item);
+        }
+        if ((string)story.variablesState["removeitem"] != "")
+        {
+            string item = (string)story.variablesState["removeitem"];
+            inventory.RemoveItem(item);
+        }
         talking = false;
         eraseUI();
     }
@@ -126,5 +137,17 @@ public class DialogueManager : MonoBehaviour
             text = story.ContinueMaximally();
         }
         return text;
+    }
+    int check_rep(int i)
+    {
+        return rep[i];
+    }
+    bool check_item(string item)
+    {
+        if(inventory.CheckForItem(item) != null)
+        {
+            return true;
+        }
+        return false;
     }
 }
