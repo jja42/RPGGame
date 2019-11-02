@@ -29,14 +29,34 @@ public class SkillTree : MonoBehaviour
     }
     public void AquireSkill(Skill skill)
     {
-        if (CheckForSkill(skill.title))
+        Debug.Log(skill.title);
+        if (!CheckForSkill(skill.title))
         {
+            Debug.Log(skill.title + " already acquired");
+            return;
+        }
+            for(int i = 0; i<skill.prereqs.Length;i++)
+            {
+                if (CheckForReq(skill.prereqs[i]))
+                {
+                    Debug.Log("Missing Prereq: " + skillDatabase.GetSkill(skill.prereqs[i]).title);
+                    return;
+                }
+            }
             characterSkills.Add(skill);
         }
-    }
+
     public bool CheckForSkill(string skillname)
     {
         if (characterSkills.Find(skill => skill.title == skillname) != null)
+        {
+            return false;
+        }
+        return true;
+    }
+    public bool CheckForReq(int id)
+    {
+        if (characterSkills.Find(skill => skill.id == id) != null)
         {
             return false;
         }

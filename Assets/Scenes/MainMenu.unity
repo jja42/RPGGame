@@ -515,6 +515,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1592148433}
+        m_MethodName: SceneChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1592148435}
         m_MethodName: Load
         m_Mode: 1
@@ -523,7 +534,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Load
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1331299631
@@ -819,7 +830,7 @@ GameObject:
   - component: {fileID: 1592148433}
   - component: {fileID: 1592148435}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Save Load Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -864,10 +875,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    player_pos:
+    player:
       x: 0
       y: 0
       z: 0
+    entities: []
     level: 0
     fire: 0
     wind: 0
@@ -878,6 +890,12 @@ MonoBehaviour:
     defense: 0
     power: 0
     exp: 0
+    accuracy: 0.5
+    dodge: 0.05
+    counter: 0.05
+    health_points: 30
+    rep: 00000000000000000000000000000000
+    saved: 0
 --- !u!1 &1962699404
 GameObject:
   m_ObjectHideFlags: 0

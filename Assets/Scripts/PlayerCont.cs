@@ -16,6 +16,7 @@ public class PlayerCont : MonoBehaviour
     public SpriteRenderer spriterenderer;
     public Animator animator;
     public float walkSpeed = 3f;
+    public Stats stats;
     public enum Direction
     {
         North,
@@ -34,61 +35,65 @@ public class PlayerCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if (!isMoving && !dialogueManager.talking && ActionManager.instance.units_moving <= 0)
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            stats.gameObject.SetActive(!stats.gameObject.activeSelf);
+        }
+        if (!isMoving && !dialogueManager.talking && ActionManager.instance.units_moving <= 0)
+        {
+            input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
             {
-                input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-                if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+                input.y = 0;
+            }
+            else
+            {
+                input.x = 0;
+            }
+            if (input != Vector2.zero)
+            {
+                if (input.x < 0)
                 {
-                    input.y = 0;
+                    currentDir = Direction.West;
+                    animator.SetFloat("Horizontal", input.x);
+                    animator.SetFloat("Vertical", input.y);
                 }
-                else
+                else if (input.x > 0)
                 {
-                    input.x = 0;
-                }
-                if (input != Vector2.zero)
-                {
-                    if (input.x < 0)
-                    {
-                        currentDir = Direction.West;
-                        animator.SetFloat("Horizontal", input.x);
-                        animator.SetFloat("Vertical", input.y);
-                    }
-                    else if (input.x > 0)
-                    {
-                        currentDir = Direction.East;
-                        animator.SetFloat("Horizontal", input.x);
-                        animator.SetFloat("Vertical", input.y);
+                    currentDir = Direction.East;
+                    animator.SetFloat("Horizontal", input.x);
+                    animator.SetFloat("Vertical", input.y);
 
-                    }
-                    else if (input.y < 0)
-                    {
-                        currentDir = Direction.South;
-                        animator.SetFloat("Horizontal", input.x);
-                        animator.SetFloat("Vertical", input.y);
-
-                    }
-                    else if (input.y > 0)
-                    {
-                        currentDir = Direction.North;
-                        animator.SetFloat("Horizontal", input.x);
-                        animator.SetFloat("Vertical", input.y);
-
-                    }
-
-                    StartCoroutine(Move(transform));
-                    SetSprite(currentDir);
                 }
-                else
+                else if (input.y < 0)
                 {
-                    animator.SetFloat("Horizontal", 0);
-                    animator.SetFloat("Vertical", 0);
+                    currentDir = Direction.South;
+                    animator.SetFloat("Horizontal", input.x);
+                    animator.SetFloat("Vertical", input.y);
+
                 }
-                if (Input.GetKeyDown("space"))
+                else if (input.y > 0)
                 {
-                    NPCFind(transform.position);
+                    currentDir = Direction.North;
+                    animator.SetFloat("Horizontal", input.x);
+                    animator.SetFloat("Vertical", input.y);
+
                 }
+
+                StartCoroutine(Move(transform));
+                SetSprite(currentDir);
+            }
+            else
+            {
+                animator.SetFloat("Horizontal", 0);
+                animator.SetFloat("Vertical", 0);
+            }
+            if (Input.GetKeyDown("space"))
+            {
+                NPCFind(transform.position);
             }
         }
+    }
     void NPCFind(Vector3 center)
     {
         float radius = 0.7f;
@@ -114,7 +119,7 @@ public class PlayerCont : MonoBehaviour
         }
         ActionManager.instance.MoveAll();
         isMoving = false;
-       yield return 0;
+        yield return 0;
     }
     public void SetSprite(Direction currentDir)
     {
@@ -142,26 +147,5 @@ public class PlayerCont : MonoBehaviour
                     break;
                 }
         }
-    }
-    public int getAggression()
-    {
-        return getRep(0);
-    }
-    public int getApathy()
-    {
-        return getRep(3);
-    }
-    public int getEmpathy()
-    {
-        return getRep(2);
-    }
-    public int getPragmatism()
-    {
-        return getRep(1);
-    }
-
-    public int getRep(int i)
-    {
-        return dialogueManager.rep[i];
     }
 }

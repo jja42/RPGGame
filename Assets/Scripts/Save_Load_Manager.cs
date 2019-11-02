@@ -10,6 +10,9 @@ public class Save_Load_Manager : MonoBehaviour
     public Data data;
     string datafile = "save.sav";
     // Update is called once per frame
+    private void Start()
+    {
+    }
     void Awake()
     {
        if (instance == null)
@@ -46,17 +49,24 @@ public class Save_Load_Manager : MonoBehaviour
 [System.Serializable]
 public class Data
 {
-    public Position player_pos;
-    public int level;
-    public int fire;
-    public int wind;
-    public int water;
-    public int earth;
-    public int lightning;
-    public int health;
-    public int defense;
-    public int power;
-    public int exp;
+    public Position player = null;
+    public Position[] entities = null;
+    public int level = 1;
+    public int fire = 1;
+    public int wind = 1;
+    public int water = 1;
+    public int earth = 1;
+    public int lightning = 1;
+    public int health= 5;
+    public int defense = 5;
+    public int power = 5;
+    public int exp = 0;
+    public float accuracy = .5f;
+    public float dodge = .05f;
+    public float counter = .05f;
+    public int health_points = 30;
+    public int[] rep = { 0, 0, 0, 0 };
+    public int saved = 0;
 }
 [System.Serializable]
 public class Position

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -10,19 +11,44 @@ public class DialogueManager : MonoBehaviour
     public Text textPrefab;
     public Button buttonPrefab;
     public bool talking = false;
-    public int[] rep = { 0, 0, 0, 0 };
     public Inventory inventory;
-
     // Start is called before the first frame update
     public void PlayDialogue(string name)
     {
         talking = true;
         string title = name;
-        TextAsset inkJSON = Resources.Load<TextAsset>("Ink/" + title );
+        TextAsset inkJSON = Resources.Load<TextAsset>("Ink/" + title);
         story = new Story(inkJSON.text);
+        story.BindExternalFunction("check_rep", (string rep) =>
+        {
+            if (rep == "aggression")
+            {
+                return Save_Load_Manager.instance.data.rep[0];
+            }
+            if (rep == "pragmatism")
+            {
+                return Save_Load_Manager.instance.data.rep[1];
+            }
+            if (rep == "empathy")
+            {
+                return Save_Load_Manager.instance.data.rep[2];
+            }
+            if (rep == "apathy")
+            {
+                return Save_Load_Manager.instance.data.rep[3];
+            }
+            return 0;
+        });
+        story.BindExternalFunction("check_item", (string item) =>
+        {
 
+            if (inventory.CheckForItem(item) != null)
+            {
+                return 1;
+            }
+            return 0;
+        });
         refreshUI();
-
     }
 
     void refreshUI()
@@ -30,7 +56,7 @@ public class DialogueManager : MonoBehaviour
         eraseUI();
 
         Text storyText = Instantiate(textPrefab) as Text;
-            storyText.text = loadStoryChunk();
+        storyText.text = loadStoryChunk();
         storyText.transform.SetParent(this.transform, false);
 
         foreach (Choice choice in story.currentChoices)
@@ -48,7 +74,7 @@ public class DialogueManager : MonoBehaviour
                 chooseStoryChoice(choice);
             });
         }
-        if(story.currentChoices.Count == 0)
+        if (story.currentChoices.Count == 0)
         {
             Button choiceButton = Instantiate(buttonPrefab) as Button;
             choiceButton.transform.SetParent(this.transform, false);
@@ -62,44 +88,44 @@ public class DialogueManager : MonoBehaviour
     }
     void ExitStory()
     {
-        if ((string) story.variablesState["rep"] == "agg_true")
+        if ((string)story.variablesState["rep"] == "agg_true")
         {
-            rep[0] += 1;
+            Save_Load_Manager.instance.data.rep[0] += 1;
         }
         else if ((string)story.variablesState["rep"] == "agg_false")
         {
-            rep[0] += -1;
+            Save_Load_Manager.instance.data.rep[0] += -1;
         }
         else if ((string)story.variablesState["rep"] == "prag_true")
         {
-            rep[1] += 1;
+            Save_Load_Manager.instance.data.rep[1] += 1;
         }
         else if ((string)story.variablesState["rep"] == "prag_false")
         {
-            rep[1] += -1;
+            Save_Load_Manager.instance.data.rep[1] += -1;
         }
         else if ((string)story.variablesState["rep"] == "emp_true")
         {
-            rep[2] += 1;
+            Save_Load_Manager.instance.data.rep[2] += 1;
         }
         else if ((string)story.variablesState["rep"] == "emp_false")
         {
-            rep[2] += -1;
+            Save_Load_Manager.instance.data.rep[2] += -1;
         }
         else if ((string)story.variablesState["rep"] == "apath_true")
         {
-            rep[3] += 1;
+            Save_Load_Manager.instance.data.rep[3] += 1;
         }
         else if ((string)story.variablesState["rep"] == "apath_false")
         {
-            rep[3] += -1;
+            Save_Load_Manager.instance.data.rep[3] += -1;
         }
-        if ((string)story.variablesState["giveitem"] != "")
+        if ((string)story.variablesState["giveitem"] != null)
         {
             string item = (string)story.variablesState["giveitem"];
             inventory.GiveItem(item);
         }
-        if ((string)story.variablesState["removeitem"] != "")
+        if ((string)story.variablesState["removeitem"] != null)
         {
             string item = (string)story.variablesState["removeitem"];
             inventory.RemoveItem(item);
@@ -137,17 +163,5 @@ public class DialogueManager : MonoBehaviour
             text = story.ContinueMaximally();
         }
         return text;
-    }
-    int check_rep(int i)
-    {
-        return rep[i];
-    }
-    bool check_item(string item)
-    {
-        if(inventory.CheckForItem(item) != null)
-        {
-            return true;
-        }
-        return false;
     }
 }
