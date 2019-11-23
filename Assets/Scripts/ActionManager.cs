@@ -10,10 +10,9 @@ public class ActionManager : MonoBehaviour
     public int units_moving;
     public void Start()
     {
-        instance = this;
+        /*instance = this;
         entities = GameObject.FindGameObjectsWithTag("NPC");
         player = GameObject.FindGameObjectsWithTag("Player")[0];
-        Debug.Log(Save_Load_Manager.instance.data.saved);
         if (Save_Load_Manager.instance.data.saved != 0)
         {
             player.transform.position = Save_Load_Manager.instance.data.player.toVector3();
@@ -24,7 +23,7 @@ public class ActionManager : MonoBehaviour
             {
                 entities[i].transform.position = Save_Load_Manager.instance.data.entities[i].toVector3();
             }
-        }
+        }*/
     }
     public void MoveAll()
     {

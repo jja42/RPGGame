@@ -4,32 +4,19 @@ using UnityEngine;
 public class PlayerCont : MonoBehaviour
 {
     public DialogueManager dialogueManager;
-    Direction currentDir;
     Vector2 input;
     bool isMoving = false;
     Vector3 startPos;
     Vector3 endPos;
     float t;
-    public Sprite northSprite;
-    public Sprite sideSprite;
-    public Sprite southSprite;
-    public SpriteRenderer spriterenderer;
     public Animator animator;
     public float walkSpeed = 3f;
     public Stats stats;
-    public enum Direction
-    {
-        North,
-        East,
-        South,
-        West
-    }
 
     // Start is called before the first frame update
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
-        spriterenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -37,9 +24,14 @@ public class PlayerCont : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            stats.gameObject.SetActive(!stats.gameObject.activeSelf);
+            //stats.gameObject.SetActive(!stats.gameObject.activeSelf);
         }
-        if (!isMoving && !dialogueManager.talking && ActionManager.instance.units_moving <= 0)
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+        }
+        //if (!isMoving && !dialogueManager.talking && ActionManager.instance.units_moving <= 0)
+        if (!isMoving)
         {
             input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
@@ -54,41 +46,48 @@ public class PlayerCont : MonoBehaviour
             {
                 if (input.x < 0)
                 {
-                    currentDir = Direction.West;
+                 
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
+                    animator.SetFloat("LastHorizontal", input.x);
+                    animator.SetFloat("LastVertical", input.y);
                 }
                 else if (input.x > 0)
                 {
-                    currentDir = Direction.East;
+                    
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
+                    animator.SetFloat("LastHorizontal", input.x);
+                    animator.SetFloat("LastVertical", input.y);
 
                 }
                 else if (input.y < 0)
                 {
-                    currentDir = Direction.South;
+                   
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
+                    animator.SetFloat("LastHorizontal", input.x);
+                    animator.SetFloat("LastVertical", input.y);
 
                 }
                 else if (input.y > 0)
                 {
-                    currentDir = Direction.North;
+               
                     animator.SetFloat("Horizontal", input.x);
                     animator.SetFloat("Vertical", input.y);
+                    animator.SetFloat("LastHorizontal", input.x);
+                    animator.SetFloat("LastVertical", input.y);
 
                 }
 
                 StartCoroutine(Move(transform));
-                SetSprite(currentDir);
             }
             else
             {
                 animator.SetFloat("Horizontal", 0);
-                animator.SetFloat("Vertical", 0);
+                 animator.SetFloat("Vertical", 0);
             }
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 NPCFind(transform.position);
             }
@@ -110,42 +109,37 @@ public class PlayerCont : MonoBehaviour
         isMoving = true;
         startPos = entity.position;
         t = 0;
-        endPos = new Vector3(startPos.x + System.Math.Sign(input.x), startPos.y + System.Math.Sign(input.y), startPos.z);
+        endPos = new Vector3(startPos.x + (.5f *System.Math.Sign(input.x)), startPos.y + (.5f *System.Math.Sign(input.y)), startPos.z);
         while (t < 1f)
         {
             t += Time.deltaTime * walkSpeed;
             entity.position = Vector3.Lerp(startPos, endPos, t);
             yield return 0;
         }
-        ActionManager.instance.MoveAll();
+        //ActionManager.instance.MoveAll();
         isMoving = false;
         yield return 0;
     }
-    public void SetSprite(Direction currentDir)
+    public IEnumerator Attack(Transform entity)
     {
-        switch (currentDir)
+        isMoving = true;
+        startPos = entity.position;
+        t = 0;
+        endPos = new Vector3(startPos.x + (.5f * System.Math.Sign(input.x)), startPos.y + (.5f * System.Math.Sign(input.y)), startPos.z);
+        while (t < .5f)
         {
-            case Direction.North:
-                {
-                    spriterenderer.sprite = northSprite;
-                    break;
-                }
-            case Direction.East:
-                {
-                    spriterenderer.sprite = sideSprite;
-                    break;
-                }
-            case Direction.West:
-                {
-                    spriterenderer.sprite = sideSprite;
-                    spriterenderer.flipX = true;
-                    break;
-                }
-            case Direction.South:
-                {
-                    spriterenderer.sprite = southSprite;
-                    break;
-                }
+            t += Time.deltaTime * walkSpeed;
+            entity.position = Vector3.Lerp(startPos, endPos, t);
+            yield return 0;
         }
+        while (t < 1f)
+        {
+            t += Time.deltaTime * walkSpeed;
+            entity.position = Vector3.Lerp(endPos, startPos, t);
+            yield return 0;
+        }
+        //ActionManager.instance.MoveAll();
+        isMoving = false;
+        yield return 0;
     }
 }
