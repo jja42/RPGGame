@@ -12,6 +12,10 @@ public class Save_Load_Manager : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+        for(int i = 0; i<50; i++)
+        {
+            data.moods[i] = Random.Range(1, 4);
+        }
     }
     void Awake()
     {
@@ -66,6 +70,7 @@ public class Data
     public float counter = .05f;
     public int health_points = 30;
     public int[] rep = { 0, 0, 0, 0 };
+    public int[] moods = new int[50];
     public int saved = 0;
 }
 [System.Serializable]

@@ -39,6 +39,10 @@ public class DialogueManager : MonoBehaviour
             }
             return 0;
         });
+        story.BindExternalFunction("check_mood",(int id) =>
+        {
+            return Save_Load_Manager.instance.data.moods[id];
+        });
         story.BindExternalFunction("check_item", (string item) =>
         {
 

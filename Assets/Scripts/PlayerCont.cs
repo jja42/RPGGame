@@ -24,7 +24,8 @@ public class PlayerCont : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            //stats.gameObject.SetActive(!stats.gameObject.activeSelf);
+            stats.gameObject.SetActive(!stats.gameObject.activeSelf);
+            
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
