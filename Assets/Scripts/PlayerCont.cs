@@ -1,22 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class PlayerCont : MonoBehaviour
 {
     public DialogueManager dialogueManager;
     Vector2 input;
     bool isMoving = false;
     Vector3 startPos;
+    private Vector3 startRotation;
+    private Vector3 endRotation;
     Vector3 endPos;
     float t;
     public Animator animator;
     public float walkSpeed = 3f;
     public Stats stats;
+    private Transform camera_t;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        camera_t = gameObject.GetComponent<Camera>().transform;
     }
 
     // Update is called once per frame
@@ -35,52 +40,10 @@ public class PlayerCont : MonoBehaviour
         if (!isMoving)
         {
             input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
-            {
-                input.y = 0;
-            }
-            else
-            {
-                input.x = 0;
-            }
             if (input != Vector2.zero)
             {
-                if (input.x < 0)
-                {
-                 
-                    animator.SetFloat("Horizontal", input.x);
-                    animator.SetFloat("Vertical", input.y);
-                    animator.SetFloat("LastHorizontal", input.x);
-                    animator.SetFloat("LastVertical", input.y);
+                animator.SetBool("Moving",true);
                 }
-                else if (input.x > 0)
-                {
-                    
-                    animator.SetFloat("Horizontal", input.x);
-                    animator.SetFloat("Vertical", input.y);
-                    animator.SetFloat("LastHorizontal", input.x);
-                    animator.SetFloat("LastVertical", input.y);
-
-                }
-                else if (input.y < 0)
-                {
-                   
-                    animator.SetFloat("Horizontal", input.x);
-                    animator.SetFloat("Vertical", input.y);
-                    animator.SetFloat("LastHorizontal", input.x);
-                    animator.SetFloat("LastVertical", input.y);
-
-                }
-                else if (input.y > 0)
-                {
-               
-                    animator.SetFloat("Horizontal", input.x);
-                    animator.SetFloat("Vertical", input.y);
-                    animator.SetFloat("LastHorizontal", input.x);
-                    animator.SetFloat("LastVertical", input.y);
-
-                }
-
                 StartCoroutine(Move(transform));
             }
             else
@@ -93,7 +56,6 @@ public class PlayerCont : MonoBehaviour
                 NPCFind(transform.position);
             }
         }
-    }
     void NPCFind(Vector3 center)
     {
         float radius = 0.7f;
@@ -109,12 +71,16 @@ public class PlayerCont : MonoBehaviour
     {
         isMoving = true;
         startPos = entity.position;
+        startRotation = entity.eulerAngles;
+        endRotation = new Vector3(entity.eulerAngles.x, entity.eulerAngles.y + System.Math.Sign(input.x) * 90.0f, entity.eulerAngles.z);
         t = 0;
-        endPos = new Vector3(startPos.x + (.5f *System.Math.Sign(input.x)), startPos.y + (.5f *System.Math.Sign(input.y)), startPos.z);
+        endPos = (startPos + ((1 * System.Math.Sign(input.y))*entity.forward) + ((1 * System.Math.Sign(input.x))*entity.right));
+        //camera_t
         while (t < 1f)
         {
             t += Time.deltaTime * walkSpeed;
-            entity.position = Vector3.Lerp(startPos, endPos, t);
+            //entity.position = Vector3.Lerp(startPos, endPos, t);
+            entity.eulerAngles = Vector3.Lerp(startRotation, endRotation, t);
             yield return 0;
         }
         //ActionManager.instance.MoveAll();
@@ -124,21 +90,6 @@ public class PlayerCont : MonoBehaviour
     public IEnumerator Attack(Transform entity)
     {
         isMoving = true;
-        startPos = entity.position;
-        t = 0;
-        endPos = new Vector3(startPos.x + (.5f * System.Math.Sign(input.x)), startPos.y + (.5f * System.Math.Sign(input.y)), startPos.z);
-        while (t < .5f)
-        {
-            t += Time.deltaTime * walkSpeed;
-            entity.position = Vector3.Lerp(startPos, endPos, t);
-            yield return 0;
-        }
-        while (t < 1f)
-        {
-            t += Time.deltaTime * walkSpeed;
-            entity.position = Vector3.Lerp(endPos, startPos, t);
-            yield return 0;
-        }
         //ActionManager.instance.MoveAll();
         isMoving = false;
         yield return 0;
