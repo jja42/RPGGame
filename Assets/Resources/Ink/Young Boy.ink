@@ -89,7 +89,7 @@ As you ask, your gaze turns towards the horizon as if hoping to see whatever has
 === place ===
 {
 -check_mood(0) == 3:
-"This is the ancestral homeland of my people, many have since moved towards the nearby village, but I want to preserve our traditions."
+"This is the ancestral homeland of my people, many have since perished in the war, but I want to preserve our traditions in the future."
 {
 -check_rep("aggression") == 1:
 +[Pressure him to leave]

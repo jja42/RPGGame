@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -296,6 +297,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -982,11 +984,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1451684899}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 145ceb8d915b67341849b364d2d47d00,
-        type: 3}
-      propertyPath: m_Name
-      value: Monk
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 145ceb8d915b67341849b364d2d47d00,
         type: 3}
       propertyPath: m_Controller
@@ -1067,6 +1064,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 333de4e10718b194d9e8488f7d214273, type: 2}
+    - target: {fileID: -927199367670048503, guid: 145ceb8d915b67341849b364d2d47d00,
+        type: 3}
+      propertyPath: m_Name
+      value: Monk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 145ceb8d915b67341849b364d2d47d00, type: 3}
 --- !u!1 &815102511
@@ -1338,6 +1340,8 @@ MonoBehaviour:
     rep: 01000000010000000100000001000000
     moods: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     saved: 0
+    flags: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    money: 1000
 --- !u!4 &950338055
 Transform:
   m_ObjectHideFlags: 0
@@ -1463,7 +1467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1092207312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1493,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1616,7 +1620,6 @@ MonoBehaviour:
   animator: {fileID: 0}
   walkSpeed: 3
   stats: {fileID: 0}
-  camera: {fileID: 869184025}
 --- !u!4 &1604531709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 145ceb8d915b67341849b364d2d47d00,
@@ -1835,8 +1838,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775427893}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.2
   m_Range: 10
