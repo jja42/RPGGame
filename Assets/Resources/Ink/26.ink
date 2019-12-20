@@ -1,16 +1,10 @@
 EXTERNAL check_rep(x)
 VAR rep = ""
 EXTERNAL check_mood(x)
-EXTERNAL check_flag(x)
 An elderly man stands still in the open air, staring idly out into the horizon. His blank expression speaks volumes in the silence of the clearing.
 +[Continue]
 ->choices
 ==choices==
-{
--check_flag(0) == 1:
-+[Past Connection]
-->flag_set
-}
 +[Who are you?]
 ->identity
 +[What are you doing?]
@@ -21,11 +15,10 @@ An elderly man stands still in the open air, staring idly out into the horizon. 
 ->war
 +[What do you think about the war?]
 ->place
-
 +[Leave him be]
 ->END
 === identity ===
-The man strokes his beard,
+The boy does not avert his gaze, remaining focused on the unchanging horizon. He hesitates for a long while before speaking up.
 {
 -check_mood(0) == 1:
 He smirks slightly, embracing the opportunity to preach a bit "A disciple of the sun, gazing upon its illumination." 
@@ -129,12 +122,7 @@ You place a hand on the child's shoulder and reassure him that he'll find a home
 You glare at the boy, telling him that he needs to leave. He seems frightened, but he seems to stand his ground regardless whether through shock or resilience.
 ~rep = "agg_true"
 ->END
-==flag_set==
-Past Event Influenced Future
-->END
 === function check_rep(x) ===
-~ return 1
-=== function check_flag(x) ===
 ~ return 1
 === function check_mood(x) ===
 ~ return 1

@@ -1,7 +1,6 @@
 EXTERNAL check_rep(x)
 VAR rep = ""
 EXTERNAL check_mood(x)
-EXTERNAL set_flag(x)
 A young boy stands still in the open air, staring idly out into the horizon. His blank expression speaks volumes in the silence of the clearing.
 +[Continue]
 ->choices
@@ -106,30 +105,23 @@ As you ask, your gaze turns towards the horizon as if hoping to see whatever has
 ==sun==
 You join the boy in giving praise to the sun, he seems delighted to have found a fellow believer.
 ~rep  = "emp_true"
-~set_flag(0)
 ->END
 ==shrug==
 You shrug without conviction, not really giving the thought much consideration. The boy seems a bit offended but he doesn't say anything.
 ~rep = "apath_true"
-~set_flag(0)
 ->END
 ==home==
 The boy laughs a bit, but he realizes your serious nature and gives you a strange look for a second before staring back towards the horizon.
 ~rep = "prag_true"
-~set_flag(0)
 ->END
 ==comfort==
 You place a hand on the child's shoulder and reassure him that he'll find a home. He faintly sobs for a second before softly nodding.
 ~rep = "emp_true"
-~set_flag(0)
 ->END
 ==leave==
 You glare at the boy, telling him that he needs to leave. He seems frightened, but he seems to stand his ground regardless whether through shock or resilience.
 ~rep = "agg_true"
-~set_flag(0)
 ->END
-=== function set_flag(x) ===
-~ return 1
 === function check_rep(x) ===
 ~ return 1
 === function check_mood(x) ===
