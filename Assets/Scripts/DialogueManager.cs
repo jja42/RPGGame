@@ -19,6 +19,22 @@ public class DialogueManager : MonoBehaviour
         string title = name;
         TextAsset inkJSON = Resources.Load<TextAsset>("Ink/" + title);
         story = new Story(inkJSON.text);
+        story.BindExternalFunction("set_flag", (int flag) =>
+        {
+            Save_Load_Manager.instance.data.flags[flag] = 1;
+            return 0;
+        });
+        story.BindExternalFunction("check_flag", (int flag) =>
+        {
+            if(Save_Load_Manager.instance.data.flags[flag] == 1){
+                return 1;
+            }
+            return 0;
+        });
+        story.BindExternalFunction("check_mood", (int id) =>
+        {
+            return Save_Load_Manager.instance.data.moods[id];
+        });
         story.BindExternalFunction("check_rep", (string rep) =>
         {
             if (rep == "aggression")

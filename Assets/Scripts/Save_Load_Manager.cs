@@ -12,6 +12,26 @@ public class Save_Load_Manager : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+        for (int i = 0; i < 50; i++)
+        {
+            data.moods[i] = Random.Range(1, 4);
+        }
+        data.moods[25] = data.moods[0];
+        data.moods[26] = data.moods[8];
+        data.moods[28] = data.moods[9];
+        data.moods[31] = data.moods[10];
+        data.moods[33] = data.moods[11];
+        data.moods[34] = data.moods[13];
+        data.moods[37] = data.moods[15];
+        data.moods[38] = data.moods[16];
+        data.moods[39] = data.moods[4];
+        data.moods[41] = data.moods[18];
+        data.moods[44] = data.moods[20];
+        data.moods[46] = data.moods[21];
+        data.moods[48] = data.moods[23];
+        for (int i = 0; i < 4; i++) {
+            data.rep[i] = 1;
+        }
     }
     void Awake()
     {
@@ -65,8 +85,10 @@ public class Data
     public float dodge = .05f;
     public float counter = .05f;
     public int health_points = 30;
-    public int[] rep = { 0, 0, 0, 0 };
+    public int[] rep = { 1, 1, 1, 1 };
     public int saved = 0;
+    public int[] moods = new int[50];
+    public int[] flags = new int[13];
 }
 [System.Serializable]
 public class Position

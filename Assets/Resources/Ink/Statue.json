@@ -1,1 +1,1 @@
-﻿{"inkVersion":19,"root":[[["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":19,"root":[["^This statue represents the visage of our monastery's founder. He was the first master that brought upon the very practices surrounding our beliefs.","\n","ev","str","^Continue","/str","/ev",{"*":"0.c-0","flg":4},{"c-0":["\n",{"->":"cont"},{"->":"0.g-0"},{"#f":5}],"g-0":["done",{"#f":5}]}],"done",{"cont":["end",{"#f":1}],"global decl":["ev","str","^","/str",{"VAR=":"rep"},"/ev","end",null],"#f":1}],"listDefs":{}}

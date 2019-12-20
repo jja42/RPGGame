@@ -10,7 +10,7 @@ public class cameracont : MonoBehaviour
 
     void Start()
     {
-        offset = transform.position - player.transform.position;
+        offset = new Vector3(0, 0, -10);
     }
 
     void LateUpdate()

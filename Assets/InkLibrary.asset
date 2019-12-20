@@ -14,13 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkLibrary:
   - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: bff3ce07f785de64191193a8c0b2caf4, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: ccb8cd36c4a776e4d9f5288f1bf4fb0d, type: 3}
+  - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: 1460e815e969b43b8a83a7caa8b48c27, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: bff3ce07f785de64191193a8c0b2caf4, type: 3}
+    inkAsset: {fileID: 102900000, guid: 058ccf41945548649bb11854005f78ca, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: ccb8cd36c4a776e4d9f5288f1bf4fb0d, type: 3}
+    jsonAsset: {fileID: 4900000, guid: fbe99f3b3794f6a408a529d4ca30612b, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: fbea67366d05c0a4ca36eb609a101c81, type: 3}
     jsonAssetPath: {fileID: 0}
@@ -30,12 +34,212 @@ MonoBehaviour:
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: ff497af2d98d080418fe7017c0e9c2b8, type: 3}
   - compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: 058ccf41945548649bb11854005f78ca, type: 3}
+    inkAsset: {fileID: 102900000, guid: 4f3b322095562d549828f8f06fe71ac2, type: 3}
     jsonAssetPath: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: fbe99f3b3794f6a408a529d4ca30612b, type: 3}
+    jsonAsset: {fileID: 4900000, guid: 482270f6c88d02146b62c23bc9ee8849, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: bdb04a20b6a50964b94cc742cce6b235, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: e00c4a5a65462b04eb3a97585dcbed65, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: f6c0b0505fb247b4fb987306da37d6f2, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 1b5ad74269bb48144bbe1cda2a772728, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 39e252b0b8d8fda46afd05db6eb5aae4, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 8e759a5934aefc6458156d5dfcc617d0, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 2323bbb08f655b041a5985ef0105f127, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: c4be4d2638a83de4e9210ebd0f64d5c3, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 5dc7c53106023264a9083ea65363bbf0, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 9f3be3537ac5784428e0c98c82a20dc3, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 57e083614b44d1845b5f6963dab55026, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 7a98c697befd92545a2874c603cb3953, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: e824ce71f9111d1489f5605c0d521402, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: f9970cf17739e0e47acba6ff2f2a14f6, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 658dbb0217149e44fab6e1713033511a, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: f2b07b605f84ec74f9d7fdbface21bfa, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 15fad37215e589a46966b2225d28655b, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: baa8b4da74cf05d46bb7854bee2da218, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: d93dbf72cf17ab14f871608780d34e40, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: e4970daff029cce4ea21a5c0a2630d9c, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 6e52e3b28299e5c47808734a3bbe4c51, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: e60f1851657776144b21e738e47513d9, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: add0186320537dd4abce1feb6193f8c9, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: be61fa7cfac0b064dbe491ff7208c3b1, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 31166c73c665f00438b5ba9bcbaca35c, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 17cb224a5ef7ecb42a84b7d3fb9dbaea, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 7e2ec1a3126f1f74d9cfbaa4e90d8e0e, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 51c50d47d7cc87647b1c37a3aa80bdaa, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: ebadc4c3be4abf74cacd2014b1ca8f09, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 626ce096004d18746832dfd9d5a999b8, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: c4291514ef3f9634a88b3d72eb42b0b4, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 57a93590023300445afc6d4300dcef24, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 36126e94cf566dc4faed09fb9e8ce4e4, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 674b5c16cdca5b446a743dd3dd202eee, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 826efcc48dc93bd46b596e555fb2d66d, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: f254d97d84bfe0443ab30ad03d64e852, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: ea066b059717127458645799638232e9, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 856590340e34ff443a065c5723aae34d, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 06311d255acc2d44ea2b96549d4c03ea, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 3fb775f32f15bb448b0d095df2d33798, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 4b7f26658377834408dffab7d9b17d60, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: b0200c634cc18b84596f4426b313901a, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 48a363b513c55b74c9ef80aa2359bcb5, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 8c8d53d508f4045438a934d7936633e7, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 032e7a1669d6e8f49970e9f339119ac4, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 428a5ede7ddbd914cabeb2bc79562bab, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 027393079f61f8449be3b83c0587aa18, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 715b62de3685d244792b06bbfe856ca3, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: d3855d071cb9a9e41bba080c4882fe86, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 6a922f0b6726421498d9ed1202f5790c, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 4826bf87bf7e04b4f82caa40a72b2e87, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: b7acd99e90739274d937a13bb2b7c9df, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 8874f0978b3f57044aed4fb98fd96513, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 0a8e873eec53f4b46ba9dfe14130ec39, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: bbec9db72fbccfc46bc6656ae6cb067b, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: b0c4e847599a9fe41abcef375d8e84a9, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 0858f90973100b84bbc13f6fd381a623, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 8cdc5bb628a498d43b9d8d692c0e9877, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: a360db59689ef3b409c36c960d6390b3, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 5f24f7059c1f798448f87cb854ff9b21, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: a226503acefce4c4b86084c2c5d93292, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: ae5e035fbde761942b40f64e94f5217e, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: aed7e80ba005ece42a08b02531170f19, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 2eea8da5ec4ef3544929ceeca994da93, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: d6fc545bb75adab4791dd724add4a5dc, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: 6c5caba17380ff14481c057983fae236, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: ed99509b4dcf32f46b43c3061d1e9fd2, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: ba4238eaa4ceef342a7e6f4096e0ae8f, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 866270db26ee67941b51db2d53217aff, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 4e265c44a73e93a44accb9d398110582, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: a2a9489c1f0eabd45975e421eaf44161, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 1fe2e8321871b624d855e2c73e342961, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 4a3358dcbb8d6d94da94aecdc5dae4da, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 611345a2509516641a1465c39b0131e5, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 12de49dca8d849b4ba96e3a50dd0d7cb, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: ad9e6f5d5bf3c38498b523a3268bd463, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: b6b134fc5e07b304aa8c309f61fcfd9e, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: d7d1c4e0981d6844ebbc093655116961, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: cc9e845d603c08a479fa88c5e5353c1e, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 0543af66917101640b2a320cbb252d6d, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 1a69958d5eeeefa4a8755e9fe1f38bf1, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: ed437d92f22ae9249a97e08a0c78fe0b, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: def9ca8d868e8a64c9d43802f9bc3f23, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 67313ab3064934444920013a8c823e50, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: ed05ad3e4031e614da464bfffd53d22d, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 86392163c150c4441b2028281dd0d799, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 2e11525e895d9594ca1a6369a98b4ef6, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 90687ec76f836d94c96f7c5960f88f53, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 68b6796e8e75e2142affe2db433460e6, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 3a44bf7a4a80f344486e38c5908af600, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 1f05be7eeb4a37548b3ae44885546bfb, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: e26eef028d0081240a1998e40d736c1a, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: a25be69e8192b514e8ac076dd38cdcb7, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 6dae9474987f4b441aa8d1aabb93fce8, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 7cf61fcebab773147952b37e504e41be, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: a2d9ffdfaa142f04083ff82ad80c1db9, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: a380b4dee65876d4c97b18858b585420, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: ed325880bbe882e49969598cd46dea3d, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: e5d6767fe314acf4db4b7f5969662d07, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 1eecf0c287f721a4e8133a09c58b1130, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 44dc718f54620834f9dfb700fce29ca5, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: e5c03e8551aebb54088598f1b048961a, type: 3}
   pendingCompilationStack: []
   compilationStack: []

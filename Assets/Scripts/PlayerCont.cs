@@ -12,11 +12,19 @@ public class PlayerCont : MonoBehaviour
     public Animator animator;
     public float walkSpeed = 3f;
     public Stats stats;
+   public GameObject[] Past;
+    public GameObject[] Future;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        Past = GameObject.FindGameObjectsWithTag("Past");
+        Future = GameObject.FindGameObjectsWithTag("Future");
+        foreach(GameObject obj in Future)
+        {
+            obj.SetActive(!gameObject.activeSelf);
+        }
     }
 
     // Update is called once per frame
@@ -28,7 +36,22 @@ public class PlayerCont : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
+            NPCFind(transform.position);
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Attack(transform);
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            foreach (GameObject obj in Future)
+            {
+                obj.SetActive(!gameObject.activeSelf);
+            }
+            foreach (GameObject obj in Past)
+            {
+                obj.SetActive(!gameObject.activeSelf);
+            }
         }
         //if (!isMoving && !dialogueManager.talking && ActionManager.instance.units_moving <= 0)
         if (!isMoving)
