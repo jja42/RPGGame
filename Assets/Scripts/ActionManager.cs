@@ -10,20 +10,13 @@ public class ActionManager : MonoBehaviour
     public int units_moving;
     public void Start()
     {
-        /*instance = this;
-        entities = GameObject.FindGameObjectsWithTag("NPC");
+        instance = this;
+        //entities = GameObject.FindGameObjectsWithTag("Enemy");
         player = GameObject.FindGameObjectsWithTag("Player")[0];
         if (Save_Load_Manager.instance.data.saved != 0)
         {
             player.transform.position = Save_Load_Manager.instance.data.player.toVector3();
         }
-        if (Save_Load_Manager.instance.data.saved != 0)
-        {
-            for (int i = 0; i < entities.Length; i++)
-            {
-                entities[i].transform.position = Save_Load_Manager.instance.data.entities[i].toVector3();
-            }
-        }*/
     }
     public void MoveAll()
     {
@@ -34,11 +27,6 @@ public class ActionManager : MonoBehaviour
             other.think();
         }
         Save_Load_Manager.instance.data.player = new Position(player.transform.position);
-        Save_Load_Manager.instance.data.entities = new Position[entities.Length];
-        for(int i = 0; i < entities.Length; i++)
-        {
-            Save_Load_Manager.instance.data.entities[i] = new Position(entities[i].transform.position);
-        }
         Save_Load_Manager.instance.data.saved = 1;
     }
     public void Save()

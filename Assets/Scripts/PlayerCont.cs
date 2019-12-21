@@ -12,6 +12,7 @@ public class PlayerCont : MonoBehaviour
     public Animator animator;
     public float walkSpeed = 3f;
     public Stats stats;
+    public Complete complete;
    public GameObject[] Past;
     public GameObject[] Future;
 
@@ -21,10 +22,6 @@ public class PlayerCont : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         Past = GameObject.FindGameObjectsWithTag("Past");
         Future = GameObject.FindGameObjectsWithTag("Future");
-        foreach(GameObject obj in Future)
-        {
-            obj.SetActive(!gameObject.activeSelf);
-        }
     }
 
     // Update is called once per frame
@@ -32,15 +29,11 @@ public class PlayerCont : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            //stats.gameObject.SetActive(!stats.gameObject.activeSelf);
+            stats.gameObject.SetActive(!stats.gameObject.activeSelf);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             NPCFind(transform.position);
-        }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Attack(transform);
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
@@ -53,8 +46,12 @@ public class PlayerCont : MonoBehaviour
                 obj.SetActive(!gameObject.activeSelf);
             }
         }
-        //if (!isMoving && !dialogueManager.talking && ActionManager.instance.units_moving <= 0)
-        if (!isMoving)
+        if(Save_Load_Manager.instance.data.score == 200)
+        {
+            complete.gameObject.SetActive(true);
+            isMoving = true;
+        }
+        if (!isMoving && !dialogueManager.talking && ActionManager.instance.units_moving <= 0)
         {
             input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
@@ -118,10 +115,10 @@ public class PlayerCont : MonoBehaviour
     }
     void NPCFind(Vector3 center)
     {
-        float radius = 0.7f;
+        float radius = .7f;
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(center, radius);
         int i = 0;
-        if (hitColliders[i] != null)
+        if (hitColliders.Length>1)
         {
             GameObject npc = hitColliders[i].gameObject;
             dialogueManager.PlayDialogue(npc.name);
@@ -139,30 +136,22 @@ public class PlayerCont : MonoBehaviour
             entity.position = Vector3.Lerp(startPos, endPos, t);
             yield return 0;
         }
-        //ActionManager.instance.MoveAll();
+       // ActionManager.instance.MoveAll();
         isMoving = false;
         yield return 0;
     }
-    public IEnumerator Attack(Transform entity)
+    public IEnumerator Attack(GameObject npc)
     {
-        isMoving = true;
-        startPos = entity.position;
-        t = 0;
-        endPos = new Vector3(startPos.x + (.5f * System.Math.Sign(input.x)), startPos.y + (.5f * System.Math.Sign(input.y)), startPos.z);
-        while (t < .5f)
+        Debug.Log(npc.name);
+        NPC_action enemy = (NPC_action)npc.GetComponent(typeof(NPC_action));
+        enemy.health -= Save_Load_Manager.instance.data.power - enemy.defense;
+        Debug.Log(enemy.health);
+        if(enemy.health <= 0)
         {
-            t += Time.deltaTime * walkSpeed;
-            entity.position = Vector3.Lerp(startPos, endPos, t);
-            yield return 0;
+            enemy.gameObject.SetActive(false);
+            Save_Load_Manager.instance.data.exp += 10;
         }
-        while (t < 1f)
-        {
-            t += Time.deltaTime * walkSpeed;
-            entity.position = Vector3.Lerp(endPos, startPos, t);
-            yield return 0;
-        }
-        //ActionManager.instance.MoveAll();
-        isMoving = false;
+        ActionManager.instance.MoveAll();
         yield return 0;
     }
 }

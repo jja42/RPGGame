@@ -9,11 +9,13 @@ public class UIItem : MonoBehaviour, IPointerClickHandler
     public Item item;
     private Image spriteImage;
     private UIItem selectedItem;
+    private ItemTooltip tooltip;
     private void Awake()
     {
         spriteImage = GetComponent<Image>();
         UpdateItem(null);
-        selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
+        //selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
+        //tooltip = GameObject.Find("Tooltip").GetComponent<ItemTooltip>();
     }
 
     public void UpdateItem(Item item)
@@ -34,21 +36,21 @@ public class UIItem : MonoBehaviour, IPointerClickHandler
     {
         if (this.item != null)
         {
-            if(selectedItem.item != null)
+           if(this.item.title == "Sword")
             {
-                Item clone = new Item(selectedItem.item);
-                selectedItem.UpdateItem(this.item);
-                UpdateItem(clone);
+                Save_Load_Manager.instance.data.power = this.item.stats["Power"];
             }
-            else
+            if (this.item.title == "Shield")
             {
-                selectedItem.UpdateItem(this.item);
-                UpdateItem(null);
+                Save_Load_Manager.instance.data.defense = this.item.stats["Defense"];
             }
-        }
-        else if(selectedItem.item != null){
-            UpdateItem(selectedItem.item);
-            selectedItem.UpdateItem(null);
+            if (this.item.title == "Potion")
+            {
+                Save_Load_Manager.instance.data.health_points += this.item.stats["Healing"];
+                Save_Load_Manager.instance.data.health_points -= Save_Load_Manager.instance.data.health_points % Save_Load_Manager.instance.data.max_health_points;
+                this.item = null;
             }
         }
     }
+
+}

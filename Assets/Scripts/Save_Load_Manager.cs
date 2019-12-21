@@ -78,17 +78,19 @@ public class Data
     public int earth = 1;
     public int lightning = 1;
     public int health= 5;
-    public int defense = 5;
-    public int power = 5;
+    public int defense = 1;
+    public int power = 1;
     public int exp = 0;
     public float accuracy = .5f;
     public float dodge = .05f;
     public float counter = .05f;
     public int health_points = 30;
+    public int max_health_points = 30;
     public int[] rep = { 1, 1, 1, 1 };
     public int saved = 0;
     public int[] moods = new int[50];
     public int[] flags = new int[13];
+    public int score = 0;
 }
 [System.Serializable]
 public class Position

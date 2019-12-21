@@ -9,7 +9,10 @@ public class Inventory : MonoBehaviour
     public UIInventory inventoryUI;
     public void Start()
     {
-        inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
+        GiveItem("Sword");
+        GiveItem("Shield");
+        GiveItem("Potion");
+        //inventoryUI.gameObject.SetActive(!inventoryUI.gameObject.activeSelf);
     }
     public void Update()
     {

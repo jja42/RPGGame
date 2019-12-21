@@ -19,11 +19,11 @@ public class Stats : MonoBehaviour
         string s = "";
         s += "Level: " + Save_Load_Manager.instance.data.level + "\t\t";
         s += "Exp: " + Save_Load_Manager.instance.data.exp + "\n";
-        s += "Fire: " + Save_Load_Manager.instance.data.fire + "\t\t";
-        s += "Water: " + Save_Load_Manager.instance.data.water + "\n";
-        s += "Wind: " + Save_Load_Manager.instance.data.wind + "\t\t";
-        s += "Earth: " + Save_Load_Manager.instance.data.earth + "\n";
-        s += "Lightning: " + Save_Load_Manager.instance.data.lightning + "\t\t";
+        //s += "Fire: " + Save_Load_Manager.instance.data.fire + "\t\t";
+       // s += "Water: " + Save_Load_Manager.instance.data.water + "\n";
+        //s += "Wind: " + Save_Load_Manager.instance.data.wind + "\t\t";
+        //s += "Earth: " + Save_Load_Manager.instance.data.earth + "\n";
+        //s += "Lightning: " + Save_Load_Manager.instance.data.lightning + "\t\t";
         s += "Power: " + Save_Load_Manager.instance.data.power + "\n";
         s += "Defense: " + Save_Load_Manager.instance.data.defense + "\t\t";
         s += "Accuracy: " + Save_Load_Manager.instance.data.accuracy + "\n";

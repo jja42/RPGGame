@@ -8,6 +8,9 @@ public abstract class NPC_action : MonoBehaviour
     protected Vector3 endPos;
     protected float t;
     public float walkSpeed = 3f;
+    public int health;
+    public int power;
+    public int defense;
     public abstract void think();
     public abstract IEnumerator Move(Transform entity);
 }

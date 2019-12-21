@@ -18,6 +18,10 @@ public class DialogueManager : MonoBehaviour
         talking = true;
         string title = name;
         TextAsset inkJSON = Resources.Load<TextAsset>("Ink/" + title);
+        if(inkJSON == null)
+        {
+            return;
+        }
         story = new Story(inkJSON.text);
         story.BindExternalFunction("set_flag", (int flag) =>
         {
@@ -98,6 +102,7 @@ public class DialogueManager : MonoBehaviour
             choiceText.text = "Exit";
             choiceButton.onClick.AddListener(delegate
             {
+                Save_Load_Manager.instance.data.score += 10;
                 ExitStory();
             });
         }
